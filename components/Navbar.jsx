@@ -118,35 +118,35 @@ const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+              <Link href='/' className={router.pathname != "/" ? "active" : "text-[#d4af37]"}>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   Home
                 </li>
               </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+              <Link href='/#about' className={router.pathname != "/about" ? "active" : "text-[#d4af37]"}>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+              <Link href='/#skills' >
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   Skills
                 </li>
               </Link>
               <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   Projects
                 </li>
               </Link>
               <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   Contact
                 </li>
               </Link>
             </ul>
             <div className='pt-14'>
-              <p className='uppercase tracking-widest text-[#d4af37]'>
-                Let&#39;s Connect
+              <p className='uppercase tracking-widest text-[#d4af37] hover:text-[#d4af37]'>
+                591 Industrial Mile Rd, Columbus, OH 43228
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 

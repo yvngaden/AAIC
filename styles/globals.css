@@ -13,7 +13,10 @@ html {
 }
 #footer {
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../public/footerImg.jpeg);
-  
+}
+#about {
+  background-image: url(../public/navLogo.png);
+  background-size: contain;
 }
 
 @layer base {
