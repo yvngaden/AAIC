@@ -1,44 +1,29 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import ImageOne from '../public/aboutPic1.jpg'
-import ImageTwo from '../public/insidemasjid.jpeg'
 import Navlogo from '../public/navLogo.png'
+import Slideshow from '../components/Slideshow'
+
 
 const about = () => {
+  
   return (
     <>
+      
       <div className='w-full h-screen text-slate-800 text-center '>
-        <div className=' w-full h-full mx-auto p-2 flex justify-center items-center'>
-          <div className=' w-full my-10 mx-auto justify-around items-center md:flex 2xl:flex-col  2xl:justify-center '>
-            <div className='md:w-2/5 shadow-slate-200 shadow-md bg-slate-200 2xl:w-full '>
-              <Image
-                className='rounded-xl md:hover:scale-105 ease-in duration-300 2xl:m-4 2xl:hover:none '
-                src={ImageOne}
-                alt='/'
-              />
-            </div>
-            <div className='md:w-2/5 shadow-slate-200 shadow-md bg-slate-200 2xl:w-full '>
-              <Image
-                className='rounded-xl md:hover:scale-105 ease-in duration-300 2xl:m-4 2xl:hover:none '
-                src={ImageOne}
-                alt='/'
-              />
-            </div>
-          </div>
-        </div>
+        <Slideshow/>
       </div>
 
-      <div className='w-full h-screen text-slate-800 text-center '>
-        <div className='w-3/5 h-full mx-auto p-4 '>
-          <div className='w-full items-center mx-auto xl:mt-4 flex '>
-          <Image
-            src={Navlogo}
-            alt='/'
-            width='200'
-            height='40'
-            className='cursor-pointer flex justify-center'
-          />
+      <div className='w-full h-screen text-slate-800 text-center md:mb-2 2xl:mb-20 '>
+        <div className='md:w-full xl:w-3/4 2xl:w-full 2xl:h-screen mx-auto p-4 '>
+          <div className='w-full items-center justify-center xl:mt-4 flex '>
+            <Image
+              src={Navlogo}
+              alt='/'
+              width='250'
+              height='80'
+              className='flex text-center item-center'
+            />
           </div>
           <div className=' my-5'>
             <h1 className='py-6 decoration-slice'>Welcome to Masjid Abu Bakar</h1>

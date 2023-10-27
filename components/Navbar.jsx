@@ -60,7 +60,7 @@ const Navbar = () => {
               <Link href='/about' className={router.pathname != "/about" ? "active" : "text-[#d4af37]"}>About</Link>
             </li>
             <li className='ml-10 text-sm uppercase  hover:text-[#d4af37]'>
-              <Link href='/#skills'>Skills</Link>
+            <Link href='/servicesPage' className={router.pathname != "/servicesPage" ? "active" : "text-[#d4af37]"}>Service</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:text-[#d4af37]'>
               <Link href='/#projects'>Projects</Link>
@@ -123,12 +123,12 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href='/#about' className={router.pathname != "/about" ? "active" : "text-[#d4af37]"}>
+              <Link href='/about' className={router.pathname != "/about" ? "active" : "text-[#d4af37]"}>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   About
                 </li>
               </Link>
-              <Link href='/#skills' >
+              <Link href='/servicesPage' className={router.pathname != "/servicesPage" ? "active" : "text-[#d4af37]"} >
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d4af37]'>
                   Skills
                 </li>
